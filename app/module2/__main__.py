@@ -1,3 +1,5 @@
+""" Module `module2` main """
+
 from . import use_function_mul, use_function_div
 
 
@@ -10,5 +12,3 @@ def main() -> int:
 
 if __name__ == '__main__':
 	raise SystemExit(main())
-else:
-	main()
