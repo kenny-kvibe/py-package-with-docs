@@ -1,4 +1,4 @@
-""" Module `app` main """
+""" Package module `app` main """
 
 from . import module1, module2
 
