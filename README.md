@@ -1,9 +1,7 @@
 
 # Sphinx
 > Documentation Generator Tool
-
-# DOCs:  https://www.sphinx-doc.org/en/master
-
+> DOCs:  https://www.sphinx-doc.org/en/master
 
 
 # Python `__init__` vs `__main__` files
