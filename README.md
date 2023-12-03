@@ -1,8 +1,53 @@
 
 # Sphinx
 > Documentation Generator Tool
-> DOCs:  https://www.sphinx-doc.org/en/master
+> DOCs:    https://www.sphinx-doc.org/en/master
+> Themes:  https://sphinx-themes.org/#themes
 
+------------
+
+### Sphinx Usage
+
+> Create directory `docs`  (adjacent to your `app`) and open it
+> Run `sphinx-quickstart`
+
+> Go one directory up from `docs` and run:
+  `sphinx-apidoc -o docs app`
+
+> Changes in file `docs/conf.py`
++ [line 6]
+```py
+import os, sys
+sys.path.insert(0, os.path.abspath('..'))
+```
++ [line 20]
+```py
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.duration',
+    'sphinx.ext.todo',
+    'sphinx.ext.viewcode'
+]
+```
++ [line 33]
+```py
+html_theme = 'sphinx_rtd_theme'
+```
+
+> Changes in file `docs/index.rst`
++ [line 10] Change the `:maxdepth:` number to `0`
+            (it won't crawl sub-modules, we'll add them manually)
++ [line 13] Add only `modules` text
+            (it calls `docs/modules.rst` on build)
+
+> Changes in file `docs/modules.rst`
++ [line 7+] Add your module names (example: `app.module_name`)
+            to include them in the docs generation
+
+> Then open `docs` directory again and run:
+  `make.bat html`
+
+------------
 
 # Python `import` system
   https://docs.python.org/3/reference/import.html
