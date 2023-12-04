@@ -1,5 +1,7 @@
 """ Module `module2.mod` """
 
+import time
+
 from .. import utils
 from ..config import NUMBER_A, NUMBER_B
 
