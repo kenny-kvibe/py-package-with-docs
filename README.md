@@ -16,7 +16,7 @@
 - Go one directory up from `docs` (back to parent directory)
   & run: `sphinx-apidoc -o docs app`
 
-- Changes in file `docs/conf.py`:
+- Changes in file `docs/conf.py`
   + [line 6]
   ```py
   import os, sys
