@@ -17,6 +17,8 @@ def main() -> int:
 	app.module2.use_function_mul()
 	app.module2.use_function_div()
 
+	app.module2.run_daemon()
+	
 	return 0
 
 
