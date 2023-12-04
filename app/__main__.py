@@ -15,6 +15,8 @@ def main() -> int:
 	module2.use_function_mul()
 	module2.use_function_div()
 
+	module2.run_daemon()
+	
 	return 0
 
 
